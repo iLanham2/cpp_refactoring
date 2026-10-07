@@ -2,7 +2,7 @@
 
 namespace refactoring::comments {
 
-class X1 {
+class RangeSquareCalculator {
 public:
     static int sumOfSquaresOverRange(int lowerBound, int upperBound);
     static int square(int number);

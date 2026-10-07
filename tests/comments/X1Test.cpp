@@ -2,7 +2,7 @@
 
 #include "comments/X1.h"
 
-using refactoring::comments::X1;
+using refactoring::comments::RangeSquareCalculator;
 
 TEST(X1Test, sumOfSquaresOverRange) {
     int lowerBound = 7;
@@ -14,7 +14,7 @@ TEST(X1Test, sumOfSquaresOverRange) {
         expected += i * i;
     }
 
-    int actual = X1::sumOfSquaresOverRange(lowerBound, upperBound);
+    int actual = RangeSquareCalculator::sumOfSquaresOverRange(lowerBound, upperBound);
 
     EXPECT_EQ(expected, actual);
 }
