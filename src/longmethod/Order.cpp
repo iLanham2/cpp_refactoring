@@ -51,7 +51,6 @@ OrderSummary Order::summarise() const {
 
     double discount = applyDiscount(subtotal);
 
-    // Tax calculation
     double tax = calculateTax(subtotal, discount);
 
     // Total calculation
