@@ -17,7 +17,6 @@ void Order::validate() const
 
 OrderSummary Order::summarise() const {
 
-    // Validation
     validate();
 
     // Subtotal calculation
