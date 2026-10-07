@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "comments/X1.h"
+#include "comments/RangeSquareCalculator.h"
 
 using refactoring::comments::RangeSquareCalculator;
 
