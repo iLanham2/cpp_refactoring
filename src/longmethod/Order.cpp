@@ -29,7 +29,6 @@ OrderSummary Order::summarise() const {
 
     validate();
 
-    // Subtotal calculation
     double subtotal = calculateSubtotal();
 
     // Discount rules
