@@ -4,7 +4,7 @@
 
 using refactoring::comments::RangeSquareCalculator;
 
-TEST(X1Test, sumOfSquaresOverRange) {
+TEST(RangeSquareCalculatorTest, sumOfSquaresOverRange) {
     int lowerBound = 7;
     int upperBound = 12;
 
