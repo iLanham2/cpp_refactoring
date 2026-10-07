@@ -2,18 +2,18 @@
 
 namespace refactoring::comments {
 
-int X1::m(int lowerBound, int upperBound) {
-    int sum = 0;
+    int X1::m(int lowerBound, int upperBound) {
+        int sum = 0;
 
-    for (int i = lowerBound; i <= upperBound; i++) {
-        sum += square(i);
+        for (int i = lowerBound; i <= upperBound; i++) {
+            sum += square(i);
+        }
+
+        return sum;
     }
 
-    return sum;
-}
-
-int X1::square(int number) {
-    return number * number;
-}
+    int X1::square(int number) {
+        return number * number;
+    }
 
 }
