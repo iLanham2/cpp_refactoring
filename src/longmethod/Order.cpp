@@ -15,15 +15,22 @@ void Order::validate() const
     }    
 }
 
+double Order::calculateSubtotal() const
+{
+    double subtotal = 0.0;
+    for (const OrderItem& item : *items_) {
+        subtotal += item.getPrice() * item.getQuantity();
+    }
+    
+    return subtotal;
+}
+
 OrderSummary Order::summarise() const {
 
     validate();
 
     // Subtotal calculation
-    double subtotal = 0.0;
-    for (const OrderItem& item : *items_) {
-        subtotal += item.getPrice() * item.getQuantity();
-    }
+    double subtotal = calculateSubtotal();
 
     // Discount rules
     double discount = 0.0;
