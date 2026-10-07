@@ -4,7 +4,7 @@
 
 using refactoring::comments::X1;
 
-TEST(X1Test, t1) {
+TEST(X1Test, sumOfSquaresOverRange) {
     int a = 7;
     int b = 12;
 
