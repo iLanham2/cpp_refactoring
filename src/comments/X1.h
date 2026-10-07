@@ -4,7 +4,7 @@ namespace refactoring::comments {
 
 class X1 {
 public:
-    static int m(int q, int z);
+    static int sumOfSquaresOverRange(int q, int z);
     static int square(int k);
 };
 
