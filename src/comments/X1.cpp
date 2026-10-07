@@ -16,4 +16,4 @@ int X1::square(int number) {
     return number * number;
 }
 
-} // namespace refactoring::comments
+}
