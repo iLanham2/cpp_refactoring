@@ -46,11 +46,10 @@ OrderSummary Order::summarise() const {
     double discount = applyDiscount(subtotal);
 
     // Tax calculation
-    double taxableAmount = subtotal - discount;
-    double tax = taxableAmount * 0.20;
+    double tax = (subtotal - discount) * 0.20;
 
     // Total calculation
-    double total = taxableAmount + tax;
+    double total = (subtotal - discount) + tax;
 
     return OrderSummary(subtotal, discount, tax, total);
 }
