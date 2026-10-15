@@ -1,5 +1,6 @@
 #include "divergentchange/CustomerService.h"
 #include "divergentchange/EmailValidator.h"
+#include "divergentchange/DisplayNameFormatter.h"
 #include <algorithm>
 #include <cctype>
 #include <regex>
@@ -31,7 +32,7 @@ bool CustomerService::isValidEmail(const char* email) const {
 }
 
 std::string CustomerService::formatDisplayName(const std::string& firstName, const std::string& lastName) const {
-    return trim(firstName) + " " + toUpper(trim(lastName));
+    return DisplayNameFormatter().formatDisplayName(firstName, lastName);
 }
 
 int CustomerService::calculateLoyaltyPoints(int numberOfPurchases) const {
