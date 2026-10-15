@@ -1,6 +1,7 @@
 #include "divergentchange/CustomerService.h"
 #include "divergentchange/EmailValidator.h"
 #include "divergentchange/DisplayNameFormatter.h"
+#include "divergentchange/LoyaltyPoints.h"
 
 namespace refactoring::divergentchange {
 
@@ -13,7 +14,7 @@ std::string CustomerService::formatDisplayName(const std::string& firstName, con
 }
 
 int CustomerService::calculateLoyaltyPoints(int numberOfPurchases) const {
-    return numberOfPurchases * 10;
+    return LoyaltyPoints().calculateLoyaltyPoints(numberOfPurchases);
 }
 
 std::string CustomerService::determineAccountStatus(int daysSinceLastLogin) const {

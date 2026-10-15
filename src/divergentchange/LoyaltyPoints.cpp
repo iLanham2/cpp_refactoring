@@ -3,7 +3,7 @@
 namespace refactoring::divergentchange {
 
     int LoyaltyPoints::calculateLoyaltyPoints(int numberOfPurchases) const {
-        return 0;
+        return numberOfPurchases * 10;
 }
 
 }
