@@ -2,6 +2,7 @@
 #include "divergentchange/EmailValidator.h"
 #include "divergentchange/DisplayNameFormatter.h"
 #include "divergentchange/LoyaltyPoints.h"
+#include "divergentchange/AccountStatus.h"
 
 namespace refactoring::divergentchange {
 
@@ -18,12 +19,7 @@ int CustomerService::calculateLoyaltyPoints(int numberOfPurchases) const {
 }
 
 std::string CustomerService::determineAccountStatus(int daysSinceLastLogin) const {
-    if (daysSinceLastLogin > 365) {
-        return "INACTIVE";
-    } else if (daysSinceLastLogin > 30) {
-        return "DORMANT";
-    }
-    return "ACTIVE";
+    return AccountStatus().determine(daysSinceLastLogin);
 }
 
 } // namespace refactoring::divergentchange
