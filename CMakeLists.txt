@@ -17,6 +17,7 @@ add_library(refactoring_core
     src/comments/RangeSquareCalculator.cpp
     src/divergentchange/CustomerService.cpp
     src/divergentchange/EmailValidator.cpp
+    src/divergentchange/DisplayNameFormatter.cpp
     src/duplication/Forecast.cpp
     src/duplication/WeatherReport.cpp
     src/featureenvy/Product.cpp
