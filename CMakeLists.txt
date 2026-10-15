@@ -19,6 +19,7 @@ add_library(refactoring_core
     src/divergentchange/EmailValidator.cpp
     src/divergentchange/DisplayNameFormatter.cpp
     src/divergentchange/LoyaltyPoints.cpp
+    src/divergentchange/AccountStatus.cpp
     src/duplication/Forecast.cpp
     src/duplication/WeatherReport.cpp
     src/featureenvy/Product.cpp
