@@ -7,7 +7,10 @@ namespace refactoring::divergentchange {
         {
             return "INACTIVE";
         }
-        return {};
-
+        else if (daysSinceLastLogin > 30)
+        {
+            return "DORMANT";
+        }
+        return "ACTIVE";
     }
 }
