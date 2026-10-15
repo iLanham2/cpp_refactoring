@@ -1,9 +1,6 @@
 #include "divergentchange/CustomerService.h"
 #include "divergentchange/EmailValidator.h"
 #include "divergentchange/DisplayNameFormatter.h"
-#include <algorithm>
-#include <cctype>
-#include <regex>
 
 namespace refactoring::divergentchange {
 
