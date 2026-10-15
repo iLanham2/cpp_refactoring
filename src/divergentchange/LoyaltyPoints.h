@@ -6,6 +6,6 @@ namespace refactoring::divergentchange {
 
 class LoyaltyPoints{
     public:
-    int calculateLoyaltyPoints(int numberOfPurchases) const;
+    int calculate(int numberOfPurchases) const;
 };
 }

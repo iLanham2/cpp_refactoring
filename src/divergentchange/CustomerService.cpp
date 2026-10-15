@@ -14,7 +14,7 @@ std::string CustomerService::formatDisplayName(const std::string& firstName, con
 }
 
 int CustomerService::calculateLoyaltyPoints(int numberOfPurchases) const {
-    return LoyaltyPoints().calculateLoyaltyPoints(numberOfPurchases);
+    return LoyaltyPoints().calculate(numberOfPurchases);
 }
 
 std::string CustomerService::determineAccountStatus(int daysSinceLastLogin) const {
