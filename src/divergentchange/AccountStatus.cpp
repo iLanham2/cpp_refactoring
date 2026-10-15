@@ -3,6 +3,11 @@
 namespace refactoring::divergentchange {
     std::string AccountStatus::determine(int daysSinceLastLogin) const
     {
-        return std::string{};
+        if (daysSinceLastLogin > 365)
+        {
+            return "INACTIVE";
+        }
+        return {};
+
     }
 }
